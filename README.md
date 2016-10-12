@@ -1,2 +1,2 @@
 # MLDemos
-MLDemos software
+A Machine learning toolkit
