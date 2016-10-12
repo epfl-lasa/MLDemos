@@ -30,7 +30,7 @@ Authors
 -------
 Basilio Noris
 Learning Algorithms and Systems Laboratory
-Ecole Polytechnique Fédérale de Lausanne
+Ecole Polytechnique FÃ©dÃ©rale de Lausanne
 mldemos@b4silio.com
 http://mldemos.b4silio.com
 
