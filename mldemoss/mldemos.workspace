@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="MLDemos/MLDemos.cbp" />
+		<Project filename="_AlgorithmsPlugins/SEDS/SEDS.cbp">
+			<Depends filename="MLDemos/MLDemos.cbp" />
+		</Project>
+		<Project filename="_AlgorithmsPlugins/Obstacle/Obstacle.cbp">
+			<Depends filename="MLDemos/MLDemos.cbp" />
+		</Project>
+		<Project filename="_AlgorithmsPlugins/LWPR/LWPR.cbp">
+			<Depends filename="MLDemos/MLDemos.cbp" />
+		</Project>
+		<Project filename="_AlgorithmsPlugins/LinearMethods/LinearMethods.cbp">
+			<Depends filename="MLDemos/MLDemos.cbp" />
+		</Project>
+		<Project filename="_AlgorithmsPlugins/KPCA/kPCA.cbp">
+			<Depends filename="MLDemos/MLDemos.cbp" />
+		</Project>
+		<Project filename="_AlgorithmsPlugins/KNN/KNN.cbp">
+			<Depends filename="MLDemos/MLDemos.cbp" />
+		</Project>
+		<Project filename="_AlgorithmsPlugins/KernelMethods/KernelMethods.cbp">
+			<Depends filename="MLDemos/MLDemos.cbp" />
+		</Project>
+		<Project filename="_AlgorithmsPlugins/GMM/GMM.cbp">
+			<Depends filename="MLDemos/MLDemos.cbp" />
+		</Project>
+		<Project filename="_IOPlugins/RandomEmitter/RandomEmitter.cbp">
+			<Depends filename="MLDemos/MLDemos.cbp" />
+		</Project>
+		<Project filename="_IOPlugins/PCAFaces/PCAFaces.cbp">
+			<Depends filename="MLDemos/MLDemos.cbp" />
+		</Project>
+		<Project filename="_IOPlugins/WebImport/pluginWebImport.cbp" active="1" />
+	</Workspace>
+</CodeBlocks_workspace_file>

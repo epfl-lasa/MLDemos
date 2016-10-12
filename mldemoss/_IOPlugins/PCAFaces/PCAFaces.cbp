@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="pluginPCAFaces" />
+		<Option makefile_is_custom="1" />
+		<Option execution_dir="../PCAFaces" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<MakeCommands>
+			<Build command="$make -f $makefile all" />
+			<CompileFile command="$make -f $makefile $file" />
+			<Clean command="$make -f $makefile clean" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="$make -q -f $makefile all" />
+			<SilentBuild command="$make -s -f $makefile all" />
+		</MakeCommands>
+		<Build>
+			<Target title="debug">
+				<Option output="../../plugins/libIO_PCAFaces" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$make -f $makefile all" />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile all" />
+					<SilentBuild command="$make -s -f $makefile all" />
+				</MakeCommands>
+			</Target>
+			<Target title="release">
+				<Option output="../../plugins/libIO_PCAFaces" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$make -f $makefile all" />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile all" />
+					<SilentBuild command="$make -s -f $makefile all" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<ExtraCommands>
+			<Add before="$(#qt4)/bin/qmake -o Makefile $PROJECT_NAME.pro CONFIG+=$(TARGET_NAME) CONFIG+=opencv$(#opencv.version)" />
+			<Mode after="always" />
+		</ExtraCommands>
+		<Unit filename="PCAFaces.cpp" />
+		<Unit filename="PCAFaces.h" />
+		<Unit filename="PCAFaces.ui" />
+		<Unit filename="basicMath.h" />
+		<Unit filename="basicOpenCV.cpp" />
+		<Unit filename="basicOpenCV.h" />
+		<Unit filename="cameraGrabber.cpp" />
+		<Unit filename="cameraGrabber.h" />
+		<Unit filename="eigenFaces.cpp" />
+		<Unit filename="eigenFaces.h" />
+		<Unit filename="launcher.cpp" />
+		<Unit filename="projector.cpp" />
+		<Unit filename="projector.h" />
+		<Unit filename="sampleManager.cpp" />
+		<Unit filename="sampleManager.h" />
+		<Unit filename="widget.cpp" />
+		<Unit filename="widget.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,49 @@
+# MLDemos noise
+last-data.txt
+*.psd
+*.sln
+*.zip
+website
+
+# build/debug output
+*/ValgrindOut.xml
+pluginsDebug/*
+plugins/*
+
+# osx noise
+.DS_Store
+profile
+
+# qt noise
+*.new
+*.a
+Makefile*
+*.pro.user*
+*.app
+*.dylib
+
+# codeblocks noise
+*.layout
+*.depend
+
+# xcode noise
+build/
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace
+xcuserdata
+
+# svn & cvs
+.svn
+CVS
+
+# debian build debris
+/.pc/
+
+# temp files
+*~
+_3rdParty/ISODATA/Fil.tar.gz
