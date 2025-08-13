@@ -98,3 +98,12 @@ Linux
 5. b) Configure the project for the proper version of Qt
 6. Run Build All and sip from the coffee you already have at your side
 
+
+Known Bugs
+-----
+• WINDOWS: Clearing the canvas while in the 3D display leaves part of the memory occupied, which can accumulate when this is done several times (part of a memory bug on Windows only)
+• LINUX (CDE package) loading and saving of external files does not work
+• Approximate KNN classification creates weird blank spaces on some machines and
+• Saving does not work on the linux CDE package
+• Resizing the canvas when a reward map has been drawn does not update the underlying data (avoid doing it).
+• In Boosting, changing the data does not recompute the learners, which can lead to bad results if the data has changed boundaries
